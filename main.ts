@@ -11,7 +11,7 @@ control.runInParallel(function () {
         console.log(`[Recieved] ${data}`)
     }
     ws.onopen = () => {
-        const msg = "connected. you Win";
+        const msg = "no ip is working";
         ws.send(msg);
         console.log(`[Sent] ${msg}`);
     }
