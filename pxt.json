@@ -12,9 +12,7 @@
         "README.md",
         "assets.json"
     ],
-    "testFiles": [
-        "test.ts"
-    ],
+    "testFiles": [],
     "targetVersions": {
         "target": "1.12.56",
         "targetId": "arcade"
