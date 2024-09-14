@@ -1,3 +1,17 @@
+src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js"
+src="https://www.gstatic.com/firebasejs/9.1.0/firebase-database.js"
+     // Initialize Firebase
+     const firebaseConfig = {
+       apiKey: "AIzaSyBSmIPMEMUyL4YLDasvJBEXpFSB89nabBI",
+       authDomain: "arcade-rtdb.firebaseapp.com",
+       databaseURL: "wss://arcade-rtdb-default-rtdb.firebaseio.com",
+       projectId: "arcade-rtdb",
+       storageBucket: "arcade-rtdb.appspot.com",
+       messagingSenderId: "116900603756",
+       appId: "1:116900603756:web:c28693c615e196f3477549"
+     };
+     firebase.initializeApp(firebaseConfig);
+
 document.addEventListener("DOMContentLoaded", function () {
     const CHANNEL = "wss"
     const CLOSE_MESSAGE = 1 << 0;
