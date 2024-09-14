@@ -31,7 +31,7 @@ namespace userconfig {
     export const ARCADE_SCREEN_WIDTH = 320
     export const ARCADE_SCREEN_HEIGHT = 240
 }
-scene.setBackgroundColor(11)
+scene.setBackgroundColor(13)
 
 let gottenanswer = false
 myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
