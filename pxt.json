@@ -4,7 +4,10 @@
     "description": "",
     "dependencies": {
         "device": "*",
-        "pxt-sockets": "github:pelikhan/pxt-sockets#v0.0.23"
+        "pxt-sockets": "github:pelikhan/pxt-sockets#v0.0.23",
+        "arcade-mini-menu": "github:riknoll/arcade-mini-menu#v0.0.1",
+        "arcade-fancy-text": "github:riknoll/arcade-fancy-text#v0.1.1",
+        "Timers": "github:microsoft/arcade-timers#v1.1.0"
     },
     "files": [
         "main.blocks",
