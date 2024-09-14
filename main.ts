@@ -44,7 +44,7 @@ myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
     }
     if (selectedIndex == 1) {
         gottenanswer = true
-        req = "n/pages/" + game.askForString("what is the title?", 12) + " " + game.askForString("sentence 1", 24) + game.askForString("sentence 2", 24) + game.askForString("sentence 3", 24)
+        req = "n/pages/" + game.askForString("what is the title?", 12) + ">" + game.askForString("sentence 1", 24) + game.askForString("sentence 2", 24) + game.askForString("sentence 3", 24)
         ws.send(req)
     }
     myMenu.close()
