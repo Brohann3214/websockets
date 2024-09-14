@@ -36,7 +36,7 @@ scene.setBackgroundColor(11)
 let gottenanswer = false
 myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
     if (selectedIndex == 0) {
-        datareq = game.askForString("what is the title?", 24)
+        datareq = "/pages/" + game.askForString("what is the title?", 24)
         gottenanswer = false
         ws.send(datareq)
         pauseUntil(() => gottenanswer)
