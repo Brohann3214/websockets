@@ -22,10 +22,10 @@ control.runInParallel(function() {
     ws.onopen = () => {
         //const msg = "fiya-based";
         //ws.send(msg);
-        //console.log(`[Sent] ${msg}`);
+        console.log(`connected`);
     }
 })
-//game.consoleOverlay.setVisible(true)
+game.consoleOverlay.setVisible(true)
 
 namespace userconfig {
     export const ARCADE_SCREEN_WIDTH = 320
