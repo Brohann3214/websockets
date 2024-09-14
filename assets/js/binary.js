@@ -1,5 +1,5 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.56/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"1.0.0","target":"arcade","targetVersion":"1.12.56","repo":"brohann3214/websockets"}
-// total=2152624 new=4.60% cached=89.90% other=5.50%
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.56/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"1.0.1","target":"arcade","targetVersion":"1.12.56","repo":"brohann3214/websockets"}
+// total=2152926 new=4.61% cached=89.89% other=5.50%
 (function (ectx) {
 'use strict';
 const runtime = ectx.runtime;
@@ -607,7 +607,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P181632(s) {
+function _main___P182641(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1228,10 +1228,10 @@ switch (step) {
     globals.WebSocket_CONNECTING___158200 = (0);
     globals.WebSocket_OPEN___158201 = (1);
     r0 = pxsim_String_.mkEmpty();
-    globals.req___158202 = (r0);
-    globals.myTextSprite___158203 = (null);
+    globals.req___182335 = (r0);
+    globals.myTextSprite___182337 = (null);
     r0 = pxsim_String_.mkEmpty();
-    globals.datareq___158204 = (r0);
+    globals.datareq___182338 = (r0);
     s.tmp_0 = miniMenu_createMenu__P158155_mk(s);
     s.tmp_1 = miniMenu_createMenuItem__P158154_mk(s);
     s.tmp_1.arg0 = "view page";
@@ -1260,9 +1260,9 @@ switch (step) {
     s.callLocIdx = 74; s.pc = 46; return s.tmp_0;
   case 46:
     r0 = s.retval;
-    globals.myMenu___158205 = (r0);
+    globals.myMenu___182340 = (r0);
     r0 = pxsim_String_.mkEmpty();
-    globals.answer___158206 = (r0);
+    globals.answer___182356 = (r0);
     r0 = pxsim_pxtcore_mkClassInstance(WebSocket__C158184_VT);
     s.tmp_0 = r0;
     s.tmp_1 = WebSocket_constructor__P158185_mk(s);
@@ -1271,18 +1271,18 @@ switch (step) {
     s.callLocIdx = 75; s.pc = 49; return s.tmp_1;
   case 49:
     r0 = s.retval;
-    globals.ws___158207 = (s.tmp_0);
-    r0 = pxsim.control.runInParallel(inline__P160986);
+    globals.ws___182358 = (s.tmp_0);
+    r0 = pxsim.control.runInParallel(inline__P182362);
     s.tmp_0 = scene_setBackgroundColor__P156368_mk(s);
     s.tmp_0.arg0 = 11;
     s.callLocIdx = 82; s.pc = 50; return s.tmp_0;
   case 50:
     r0 = s.retval;
-    globals.gottenanswer___158211 = (false);
+    globals.gottenanswer___182373 = (false);
     s.tmp_0 = miniMenu_MenuSprite_onButtonPressed__P158134_mk(s);
-    s.tmp_0.arg0 = globals.myMenu___158205;
+    s.tmp_0.arg0 = globals.myMenu___182340;
     s.tmp_0.arg1 = globals.A___155598;
-    s.tmp_0.arg2 = inline__P161020;
+    s.tmp_0.arg2 = inline__P182399;
     s.callLocIdx = 93; s.pc = 51; return s.tmp_0;
   case 51:
     r0 = s.retval;
@@ -1290,13 +1290,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P181632.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/Timers/main.ts","functionName":"<main>","argumentNames":[]}
-_main___P181632.continuations = [  ]
+_main___P182641.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/Timers/main.ts","functionName":"<main>","argumentNames":[]}
+_main___P182641.continuations = [  ]
 
-function _main___P181632_mk(s) {
+function _main___P182641_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P181632, depth: s.depth + 1,
+        parent: s, fn: _main___P182641, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -1839,7 +1839,7 @@ function gameOverConfig_inline__P158792_mk(s) {
 
 
 
-function inline__P160986(s) {
+function inline__P182362(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1855,20 +1855,20 @@ switch (step) {
   case 1:
     r0 = s.retval;
     s.tmp_0 = WebSocket_onerror__P158189_mk(s);
-    s.tmp_0.arg0 = globals.ws___158207;
-    s.tmp_0.arg1 = inline__P160990;
+    s.tmp_0.arg0 = globals.ws___182358;
+    s.tmp_0.arg1 = inline__P182366;
     s.callLocIdx = 78; s.pc = 2; return s.tmp_0;
   case 2:
     r0 = s.retval;
     s.tmp_0 = WebSocket_onmessage__P158191_mk(s);
-    s.tmp_0.arg0 = globals.ws___158207;
-    s.tmp_0.arg1 = inline__P160994;
+    s.tmp_0.arg0 = globals.ws___182358;
+    s.tmp_0.arg1 = inline__P182370;
     s.callLocIdx = 80; s.pc = 3; return s.tmp_0;
   case 3:
     r0 = s.retval;
     s.tmp_0 = WebSocket_onopen__P158193_mk(s);
-    s.tmp_0.arg0 = globals.ws___158207;
-    s.tmp_0.arg1 = inline__P161013;
+    s.tmp_0.arg0 = globals.ws___182358;
+    s.tmp_0.arg1 = inline__P182390;
     s.callLocIdx = 81; s.pc = 4; return s.tmp_0;
   case 4:
     r0 = s.retval;
@@ -1876,12 +1876,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P160986.info = {"start":275,"length":519,"line":9,"column":22,"endLine":26,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P182362.info = {"start":275,"length":519,"line":9,"column":22,"endLine":26,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P160986_mk(s) {
+function inline__P182362_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P160986, depth: s.depth + 1,
+        parent: s, fn: inline__P182362, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
 } }
@@ -1890,7 +1890,7 @@ function inline__P160986_mk(s) {
 
 
 
-function inline__P160990(s) {
+function inline__P182366(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1909,12 +1909,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P160990.info = {"start":431,"length":67,"line":14,"column":17,"endLine":14,"endColumn":84,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P182366.info = {"start":431,"length":67,"line":14,"column":17,"endLine":14,"endColumn":84,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P160990_mk(s) {
+function inline__P182366_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P160990, depth: s.depth + 1,
+        parent: s, fn: inline__P182366, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
 } }
@@ -1923,7 +1923,7 @@ function inline__P160990_mk(s) {
 
 
 
-function inline__P160994(s) {
+function inline__P182370(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1933,21 +1933,21 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.data___160998 = undefined;
+    s.data___182375 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
     }
-    globals.gottenanswer___158211 = (true);
+    globals.gottenanswer___182373 = (true);
     r0 = s.arg0.fields["data"];
-    s.data___160998 = (r0);
+    s.data___182375 = (r0);
     s.tmp_0 = console_log__P153864_mk(s);
-    if ((s.data___160998) && (s.data___160998).vtable) {
+    if ((s.data___182375) && (s.data___182375).vtable) {
     setupResume(s, 2);
-    pxsim_String__stringConv(s.data___160998);
+    pxsim_String__stringConv(s.data___182375);
     checkResumeConsumed();
     return;
-    } else { s.retval = (s.data___160998) + ""; }
+    } else { s.retval = (s.data___182375) + ""; }
   case 2:
     r0 = s.retval;
     s.tmp_1 = r0;
@@ -1958,31 +1958,31 @@ switch (step) {
     r0 = s.retval;
     r0 = pxsim_String_.mkEmpty();
     s.tmp_0 = r0;
-    if ((s.data___160998) && (s.data___160998).vtable) {
+    if ((s.data___182375) && (s.data___182375).vtable) {
     setupResume(s, 3);
-    pxsim_String__stringConv(s.data___160998);
+    pxsim_String__stringConv(s.data___182375);
     checkResumeConsumed();
     return;
-    } else { s.retval = (s.data___160998) + ""; }
+    } else { s.retval = (s.data___182375) + ""; }
   case 3:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_0, s.tmp_1);
-    globals.answer___158206 = (r0);
+    globals.answer___182356 = (r0);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-inline__P160994.info = {"start":518,"length":144,"line":15,"column":19,"endLine":20,"endColumn":5,"fileName":"main.ts","functionName":"inline","argumentNames":["msg"]}
+inline__P182370.info = {"start":518,"length":144,"line":15,"column":19,"endLine":20,"endColumn":5,"fileName":"main.ts","functionName":"inline","argumentNames":["msg"]}
 
-function inline__P160994_mk(s) {
+function inline__P182370_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P160994, depth: s.depth + 1,
+        parent: s, fn: inline__P182370, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
-  data___160998: undefined,
+  data___182375: undefined,
   arg0: undefined,
 } }
 
@@ -1990,7 +1990,7 @@ function inline__P160994_mk(s) {
 
 
 
-function inline__P161013(s) {
+function inline__P182390(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2004,12 +2004,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P161013.info = {"start":679,"length":113,"line":21,"column":16,"endLine":25,"endColumn":5,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P182390.info = {"start":679,"length":113,"line":21,"column":16,"endLine":25,"endColumn":5,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P161013_mk(s) {
+function inline__P182390_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P161013, depth: s.depth + 1,
+        parent: s, fn: inline__P182390, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
 } }
 
@@ -2017,7 +2017,7 @@ function inline__P161013_mk(s) {
 
 
 
-function inline__P161020(s) {
+function inline__P182399(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2036,175 +2036,186 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
-    s.tmp_1 = game_askForString__P156522_mk(s);
-    s.tmp_1.arg0 = "what is the title?";
-    s.tmp_1.arg1 = 24;
-    s.callLocIdx = 83; s.pc = 5; return s.tmp_1;
+    s.tmp_3 = game_askForString__P156522_mk(s);
+    s.tmp_3.arg0 = "what is the title?";
+    s.tmp_3.arg1 = 24;
+    s.callLocIdx = 83; s.pc = 5; return s.tmp_3;
   case 5:
     r0 = s.retval;
-    globals.datareq___158204 = (r0);
-    globals.gottenanswer___158211 = (false);
-    s.tmp_0 = WebSocket_send__P158197_mk(s);
-    s.tmp_0.arg0 = globals.ws___158207;
-    s.tmp_0.arg1 = globals.datareq___158204;
-    s.callLocIdx = 84; s.pc = 6; return s.tmp_0;
+    s.tmp_2 = r0;
+    if ((s.tmp_2) && (s.tmp_2).vtable) {
+    setupResume(s, 6);
+    pxsim_String__stringConv(s.tmp_2);
+    checkResumeConsumed();
+    return;
+    } else { s.retval = (s.tmp_2) + ""; }
   case 6:
     r0 = s.retval;
-    s.tmp_0 = pauseUntil__P153851_mk(s);
-    s.tmp_0.arg0 = inline__P161033;
-    s.tmp_0.arg1 = undefined;
-    s.callLocIdx = 85; s.pc = 7; return s.tmp_0;
+    s.tmp_1 = r0;
+    r0 = pxsim_String__concat("/pages/", s.tmp_1);
+    globals.datareq___182338 = (r0);
+    globals.gottenanswer___182373 = (false);
+    s.tmp_0 = WebSocket_send__P158197_mk(s);
+    s.tmp_0.arg0 = globals.ws___182358;
+    s.tmp_0.arg1 = globals.datareq___182338;
+    s.callLocIdx = 84; s.pc = 7; return s.tmp_0;
   case 7:
     r0 = s.retval;
+    s.tmp_0 = pauseUntil__P153851_mk(s);
+    s.tmp_0.arg0 = inline__P182417;
+    s.tmp_0.arg1 = undefined;
+    s.callLocIdx = 85; s.pc = 8; return s.tmp_0;
+  case 8:
+    r0 = s.retval;
     s.tmp_0 = fancyText_create__P157944_mk(s);
-    s.tmp_0.arg0 = globals.answer___158206;
+    s.tmp_0.arg0 = globals.answer___182356;
     s.tmp_0.arg1 = 300;
     s.tmp_0.arg2 = 15;
     s.tmp_0.arg3 = globals.serif_small___157995;
-    s.callLocIdx = 86; s.pc = 8; return s.tmp_0;
-  case 8:
+    s.callLocIdx = 86; s.pc = 9; return s.tmp_0;
+  case 9:
     r0 = s.retval;
-    globals.myTextSprite___158203 = (r0);
+    globals.myTextSprite___182337 = (r0);
   case 1:
   case 2:
     r0 = (s.arg1 == 1);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 3; continue; }
-    globals.gottenanswer___158211 = (true);
+    globals.gottenanswer___182373 = (true);
     s.tmp_10 = game_askForString__P156522_mk(s);
     s.tmp_10.arg0 = "what is the title?";
     s.tmp_10.arg1 = 12;
-    s.callLocIdx = 87; s.pc = 9; return s.tmp_10;
-  case 9:
+    s.callLocIdx = 87; s.pc = 10; return s.tmp_10;
+  case 10:
     r0 = s.retval;
     s.tmp_9 = r0;
     if ((s.tmp_9) && (s.tmp_9).vtable) {
-    setupResume(s, 10);
+    setupResume(s, 11);
     pxsim_String__stringConv(s.tmp_9);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_9) + ""; }
-  case 10:
+  case 11:
     r0 = s.retval;
     s.tmp_8 = r0;
     r0 = pxsim_String__concat("n/pages/", s.tmp_8);
     s.tmp_7 = r0;
     if ((s.tmp_7) && (s.tmp_7).vtable) {
-    setupResume(s, 11);
+    setupResume(s, 12);
     pxsim_String__stringConv(s.tmp_7);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_7) + ""; }
-  case 11:
+  case 12:
     r0 = s.retval;
     s.tmp_6 = r0;
     r0 = pxsim_String__concat(s.tmp_6, " ");
     s.tmp_5 = r0;
     if ((s.tmp_5) && (s.tmp_5).vtable) {
-    setupResume(s, 12);
+    setupResume(s, 13);
     pxsim_String__stringConv(s.tmp_5);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_5) + ""; }
-  case 12:
+  case 13:
     r0 = s.retval;
     s.tmp_4 = r0;
     s.tmp_13 = game_askForString__P156522_mk(s);
     s.tmp_13.arg0 = "sentence 1";
     s.tmp_13.arg1 = 24;
-    s.callLocIdx = 88; s.pc = 13; return s.tmp_13;
-  case 13:
+    s.callLocIdx = 88; s.pc = 14; return s.tmp_13;
+  case 14:
     r0 = s.retval;
     s.tmp_12 = r0;
     if ((s.tmp_12) && (s.tmp_12).vtable) {
-    setupResume(s, 14);
+    setupResume(s, 15);
     pxsim_String__stringConv(s.tmp_12);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_12) + ""; }
-  case 14:
+  case 15:
     r0 = s.retval;
     s.tmp_11 = r0;
     r0 = pxsim_String__concat(s.tmp_4, s.tmp_11);
     s.tmp_3 = r0;
     if ((s.tmp_3) && (s.tmp_3).vtable) {
-    setupResume(s, 15);
+    setupResume(s, 16);
     pxsim_String__stringConv(s.tmp_3);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_3) + ""; }
-  case 15:
+  case 16:
     r0 = s.retval;
     s.tmp_2 = r0;
     s.tmp_16 = game_askForString__P156522_mk(s);
     s.tmp_16.arg0 = "sentence 2";
     s.tmp_16.arg1 = 24;
-    s.callLocIdx = 89; s.pc = 16; return s.tmp_16;
-  case 16:
+    s.callLocIdx = 89; s.pc = 17; return s.tmp_16;
+  case 17:
     r0 = s.retval;
     s.tmp_15 = r0;
     if ((s.tmp_15) && (s.tmp_15).vtable) {
-    setupResume(s, 17);
+    setupResume(s, 18);
     pxsim_String__stringConv(s.tmp_15);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_15) + ""; }
-  case 17:
+  case 18:
     r0 = s.retval;
     s.tmp_14 = r0;
     r0 = pxsim_String__concat(s.tmp_2, s.tmp_14);
     s.tmp_1 = r0;
     if ((s.tmp_1) && (s.tmp_1).vtable) {
-    setupResume(s, 18);
+    setupResume(s, 19);
     pxsim_String__stringConv(s.tmp_1);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_1) + ""; }
-  case 18:
+  case 19:
     r0 = s.retval;
     s.tmp_0 = r0;
     s.tmp_19 = game_askForString__P156522_mk(s);
     s.tmp_19.arg0 = "sentence 3";
     s.tmp_19.arg1 = 24;
-    s.callLocIdx = 90; s.pc = 19; return s.tmp_19;
-  case 19:
+    s.callLocIdx = 90; s.pc = 20; return s.tmp_19;
+  case 20:
     r0 = s.retval;
     s.tmp_18 = r0;
     if ((s.tmp_18) && (s.tmp_18).vtable) {
-    setupResume(s, 20);
+    setupResume(s, 21);
     pxsim_String__stringConv(s.tmp_18);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_18) + ""; }
-  case 20:
+  case 21:
     r0 = s.retval;
     s.tmp_17 = r0;
     r0 = pxsim_String__concat(s.tmp_0, s.tmp_17);
-    globals.req___158202 = (r0);
+    globals.req___182335 = (r0);
     s.tmp_0 = WebSocket_send__P158197_mk(s);
-    s.tmp_0.arg0 = globals.ws___158207;
-    s.tmp_0.arg1 = globals.req___158202;
-    s.callLocIdx = 91; s.pc = 21; return s.tmp_0;
-  case 21:
+    s.tmp_0.arg0 = globals.ws___182358;
+    s.tmp_0.arg1 = globals.req___182335;
+    s.callLocIdx = 91; s.pc = 22; return s.tmp_0;
+  case 22:
     r0 = s.retval;
   case 3:
   case 4:
     s.tmp_0 = miniMenu_MenuSprite_close__P158133_mk(s);
-    s.tmp_0.arg0 = globals.myMenu___158205;
-    s.callLocIdx = 92; s.pc = 22; return s.tmp_0;
-  case 22:
+    s.tmp_0.arg0 = globals.myMenu___182340;
+    s.callLocIdx = 92; s.pc = 23; return s.tmp_0;
+  case 23:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-inline__P161020.info = {"start":1040,"length":605,"line":36,"column":37,"endLine":50,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["selection","selectedIndex"]}
+inline__P182399.info = {"start":1040,"length":617,"line":36,"column":37,"endLine":50,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["selection","selectedIndex"]}
 
-function inline__P161020_mk(s) {
+function inline__P182399_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P161020, depth: s.depth + 1,
+        parent: s, fn: inline__P182399, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2234,7 +2245,7 @@ function inline__P161020_mk(s) {
 
 
 
-function inline__P161033(s) {
+function inline__P182417(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2244,16 +2255,16 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    r0 = globals.gottenanswer___158211;
+    r0 = globals.gottenanswer___182373;
     return leave(s, r0)
   default: oops()
 } } }
-inline__P161033.info = {"start":1243,"length":18,"line":41,"column":19,"endLine":41,"endColumn":37,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P182417.info = {"start":1255,"length":18,"line":41,"column":19,"endLine":41,"endColumn":37,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P161033_mk(s) {
+function inline__P182417_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P161033, depth: s.depth + 1,
+        parent: s, fn: inline__P182417, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
 } }
 
@@ -71905,7 +71916,7 @@ const sprites_BaseSpriteSayRenderer__C155744_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["myMenu___158205","ws___158207","gottenanswer___158211","answer___158206","datareq___158204","myTextSprite___158203","req___158202"])
+const breakpoints = setupDebugger(1, ["myMenu___182340","ws___182358","gottenanswer___182373","answer___182356","datareq___182338","myTextSprite___182337","req___182335"])
 
-return _main___P181632
+return _main___P182641
 })
