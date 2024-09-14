@@ -6,9 +6,9 @@ miniMenu.createMenuItem("view page"),
 miniMenu.createMenuItem("create page")
 )
 let answer  = ''
-const ws = new WebSocket("ws://make-com.ddns.net:443")
+const ws = new WebSocket("wss://eager-terms-jump.loca.lt")
 control.runInParallel(function() {
-    console.log(`connecting to ws://make-com.ddns.net:443`)
+    console.log(`connecting to wss://eager-terms-jump.loca.lt`)
 
     // string tests
     //const ws = new WebSocket("ws://127.0.0.1:443")
