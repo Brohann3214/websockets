@@ -1,10 +1,10 @@
 
 game.consoleOverlay.setVisible(true)
 control.runInParallel(function () {
-    console.log(`connecting to ws://127.0.0.1:443`)
+    console.log(`connecting to wss://arcade-rtdb-default-rtdb.firebaseio.com`)
 
     // string tests
-    const ws = new WebSocket("ws://127.0.0.1:443")
+    const ws = new WebSocket("wss://arcade-rtdb-default-rtdb.firebaseio.com")
     ws.onerror = () => console.log("error")
     ws.onmessage = (msg) => {
         const data = msg.data;
