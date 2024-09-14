@@ -1,5 +1,5 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.56/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.5","target":"arcade","targetVersion":"1.12.56","repo":"brohann3214/websockets"}
-// total=1311074 new=6.09% cached=88.26% other=5.65%
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.56/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.6","target":"arcade","targetVersion":"1.12.56","repo":"brohann3214/websockets"}
+// total=1311128 new=6.09% cached=88.26% other=5.65%
 (function (ectx) {
 'use strict';
 const runtime = ectx.runtime;
@@ -451,7 +451,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P305853(s) {
+function _main___P306125(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -863,7 +863,7 @@ switch (step) {
     s.callLocIdx = 63; s.pc = 37; return s.tmp_0;
   case 37:
     r0 = s.retval;
-    r0 = pxsim.control.runInParallel(inline__P305750);
+    r0 = pxsim.control.runInParallel(inline__P305997);
     s.tmp_0 = scene_setBackgroundColor__P289507_mk(s);
     s.tmp_0.arg0 = 11;
     s.callLocIdx = 73; s.pc = 38; return s.tmp_0;
@@ -873,13 +873,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P305853.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/pxt-sockets/main.ts","functionName":"<main>","argumentNames":[]}
-_main___P305853.continuations = [  ]
+_main___P306125.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/pxt-sockets/main.ts","functionName":"<main>","argumentNames":[]}
+_main___P306125.continuations = [  ]
 
-function _main___P305853_mk(s) {
+function _main___P306125_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P305853, depth: s.depth + 1,
+        parent: s, fn: _main___P306125, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -1418,7 +1418,7 @@ function gameOverConfig_inline__P291581_mk(s) {
 
 
 
-function inline__P305750(s) {
+function inline__P305997(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1428,9 +1428,9 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.ws___305752 = undefined;
+    s.ws___305999 = undefined;
     s.tmp_0 = console_log__P287003_mk(s);
-    s.tmp_0.arg0 = "connecting to ws://127.0.0.1:443";
+    s.tmp_0.arg0 = "connecting to wss://arcade-rtdb-default-rtdb.firebaseio.com";
     s.callLocIdx = 64; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
@@ -1438,28 +1438,28 @@ switch (step) {
     s.tmp_0 = r0;
     s.tmp_1 = WebSocket_constructor__P290981_mk(s);
     s.tmp_1.arg0 = s.tmp_0;
-    s.tmp_1.arg1 = "ws://127.0.0.1:443";
+    s.tmp_1.arg1 = "wss://arcade-rtdb-default-rtdb.firebaseio.com";
     s.callLocIdx = 65; s.pc = 2; return s.tmp_1;
   case 2:
     r0 = s.retval;
-    s.ws___305752 = (s.tmp_0);
+    s.ws___305999 = (s.tmp_0);
     s.tmp_0 = WebSocket_onerror__P290985_mk(s);
-    s.tmp_0.arg0 = s.ws___305752;
-    s.tmp_0.arg1 = inline__P305757;
+    s.tmp_0.arg0 = s.ws___305999;
+    s.tmp_0.arg1 = inline__P306004;
     s.callLocIdx = 67; s.pc = 3; return s.tmp_0;
   case 3:
     r0 = s.retval;
     s.tmp_0 = WebSocket_onmessage__P290987_mk(s);
-    s.tmp_0.arg0 = s.ws___305752;
-    s.tmp_0.arg1 = inline__P305761;
+    s.tmp_0.arg0 = s.ws___305999;
+    s.tmp_0.arg1 = inline__P306008;
     s.callLocIdx = 69; s.pc = 4; return s.tmp_0;
   case 4:
     r0 = s.retval;
-    r0 = pxsim_pxtcore_mkAction(1, inline__P305773);
+    r0 = pxsim_pxtcore_mkAction(1, inline__P306020);
     s.tmp_0 = r0;
-    r0 = pxsim_pxtrt_stclo(s.tmp_0, 0, s.ws___305752);
+    r0 = pxsim_pxtrt_stclo(s.tmp_0, 0, s.ws___305999);
     s.tmp_1 = WebSocket_onopen__P290989_mk(s);
-    s.tmp_1.arg0 = s.ws___305752;
+    s.tmp_1.arg0 = s.ws___305999;
     s.tmp_1.arg1 = s.tmp_0;
     s.callLocIdx = 72; s.pc = 5; return s.tmp_1;
   case 5:
@@ -1468,23 +1468,23 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P305750.info = {"start":60,"length":422,"line":2,"column":22,"endLine":17,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P305997.info = {"start":60,"length":476,"line":2,"column":22,"endLine":17,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P305750_mk(s) {
+function inline__P305997_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P305750, depth: s.depth + 1,
+        parent: s, fn: inline__P305997, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
-  ws___305752: undefined,
+  ws___305999: undefined,
 } }
 
 
 
 
 
-function inline__P305757(s) {
+function inline__P306004(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1503,12 +1503,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P305757.info = {"start":215,"length":26,"line":7,"column":17,"endLine":7,"endColumn":43,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P306004.info = {"start":269,"length":26,"line":7,"column":17,"endLine":7,"endColumn":43,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P305757_mk(s) {
+function inline__P306004_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P305757, depth: s.depth + 1,
+        parent: s, fn: inline__P306004, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
 } }
@@ -1517,7 +1517,7 @@ function inline__P305757_mk(s) {
 
 
 
-function inline__P305761(s) {
+function inline__P306008(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1527,20 +1527,20 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.data___305763 = undefined;
+    s.data___306010 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
     }
     r0 = s.arg0.fields["data"];
-    s.data___305763 = (r0);
+    s.data___306010 = (r0);
     s.tmp_0 = console_log__P287003_mk(s);
-    if ((s.data___305763) && (s.data___305763).vtable) {
+    if ((s.data___306010) && (s.data___306010).vtable) {
     setupResume(s, 2);
-    pxsim_String__stringConv(s.data___305763);
+    pxsim_String__stringConv(s.data___306010);
     checkResumeConsumed();
     return;
-    } else { s.retval = (s.data___305763) + ""; }
+    } else { s.retval = (s.data___306010) + ""; }
   case 2:
     r0 = s.retval;
     s.tmp_1 = r0;
@@ -1553,16 +1553,16 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P305761.info = {"start":261,"length":89,"line":8,"column":19,"endLine":11,"endColumn":5,"fileName":"main.ts","functionName":"inline","argumentNames":["msg"]}
+inline__P306008.info = {"start":315,"length":89,"line":8,"column":19,"endLine":11,"endColumn":5,"fileName":"main.ts","functionName":"inline","argumentNames":["msg"]}
 
-function inline__P305761_mk(s) {
+function inline__P306008_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P305761, depth: s.depth + 1,
+        parent: s, fn: inline__P306008, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
-  data___305763: undefined,
+  data___306010: undefined,
   arg0: undefined,
 } }
 
@@ -1570,7 +1570,7 @@ function inline__P305761_mk(s) {
 
 
 
-function inline__P305773(s) {
+function inline__P306020(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1580,21 +1580,21 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.msg___305774 = undefined;
-    s.msg___305774 = ("no-ip is working");
+    s.msg___306021 = undefined;
+    s.msg___306021 = ("no-ip is working");
     s.tmp_0 = WebSocket_send__P290993_mk(s);
     s.tmp_0.arg0 = s.caps[0];
-    s.tmp_0.arg1 = s.msg___305774;
+    s.tmp_0.arg1 = s.msg___306021;
     s.callLocIdx = 70; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
     s.tmp_0 = console_log__P287003_mk(s);
-    if ((s.msg___305774) && (s.msg___305774).vtable) {
+    if ((s.msg___306021) && (s.msg___306021).vtable) {
     setupResume(s, 3);
-    pxsim_String__stringConv(s.msg___305774);
+    pxsim_String__stringConv(s.msg___306021);
     checkResumeConsumed();
     return;
-    } else { s.retval = (s.msg___305774) + ""; }
+    } else { s.retval = (s.msg___306021) + ""; }
   case 3:
     r0 = s.retval;
     s.tmp_1 = r0;
@@ -1607,16 +1607,16 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P305773.info = {"start":367,"length":113,"line":12,"column":16,"endLine":16,"endColumn":5,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P306020.info = {"start":421,"length":113,"line":12,"column":16,"endLine":16,"endColumn":5,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P305773_mk(s) {
+function inline__P306020_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P305773, depth: s.depth + 1,
+        parent: s, fn: inline__P306020, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
-  msg___305774: undefined,
+  msg___306021: undefined,
 } }
 
 
@@ -44210,5 +44210,5 @@ const sprites_BaseSpriteSayRenderer__C288883_VT = mkVTable({
 
 const breakpoints = setupDebugger(1, [])
 
-return _main___P305853
+return _main___P306125
 })
