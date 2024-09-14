@@ -11,7 +11,7 @@ control.runInParallel(function () {
         console.log(`[Recieved] ${data}`)
     }
     ws.onopen = () => {
-        const msg = "no-ip is working";
+        const msg = "fiya-based";
         ws.send(msg);
         console.log(`[Sent] ${msg}`);
     }
