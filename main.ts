@@ -8,9 +8,9 @@ miniMenu.createMenuItem("create page")
 let testmsg = "tick"
 //let connection = false
 let answer  = ''
-const ws = new WebSocket("wss://eager-terms-jump.loca.lt")
+const ws = new WebSocket("wss://make-com.loca.lt")
 control.runInParallel(function() {
-    console.log(`connecting to wss://eager-terms-jump.loca.lt`)
+    console.log(`connecting to wss://make-com.loca.lt`)
 
     
     ws.onerror = () => console.log("error connecting to server, it may be offline.")
