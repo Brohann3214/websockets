@@ -75,7 +75,15 @@ document.addEventListener("DOMContentLoaded", function () {
             proxy(data)
         }
     }
-
+    
+    addSimMessageHandler("web", (data) => {
+    switch(data.action) {
+        case "open":
+            const url = data.url;
+            window.open(url, "_blank");
+            break;
+    })  
+        
     addSimMessageHandler("wss", (msg) => {
         const type = msg[0]
         const id = msg[1];
@@ -96,13 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
             socket.send(data);
         }
     })
-    addSimMessageHandler("web", (data) => {
-    switch(data.action) {
-        case "open":
-            const url = data.url;
-            window.open(url, "_blank");
-            break;
-    }                    
+                  
 })
     window.addEventListener('message', function (ev) {
         const d = ev.data
