@@ -41,7 +41,7 @@ myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
         pauseUntil(() => gottenanswer)
         myTextSprite = fancyText.create(answer, 300, 15, fancyText.serif_small)
         if (answer.includes("https://")) {
-            answer = answer.substr(1, answer.length-1)
+            answer = answer.substr(1, answer.length-2)
             web.open(answer)
             console.log("link opening")
             console.log(answer)
