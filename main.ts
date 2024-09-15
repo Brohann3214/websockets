@@ -25,6 +25,7 @@ control.runInParallel(function() {
         console.log(`connected`);
         connection = true
     }
+    ws.onclose = () => console.log("disconnected")
 })
 game.consoleOverlay.setVisible(true)
 
@@ -60,8 +61,3 @@ myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
 if (!(blockSettings.exists("savedusername"))){
     
 }
-game.onUpdateInterval(5000, function() {
-    if (connection){ 
-    ws.send("tick")
-    }
-})
