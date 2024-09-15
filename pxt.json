@@ -7,7 +7,9 @@
         "pxt-sockets": "github:pelikhan/pxt-sockets#v0.0.23",
         "arcade-mini-menu": "github:riknoll/arcade-mini-menu#v0.0.1",
         "arcade-fancy-text": "github:riknoll/arcade-fancy-text#v0.1.1",
-        "Timers": "github:microsoft/arcade-timers#v1.1.0"
+        "Timers": "github:microsoft/arcade-timers#v1.1.0",
+        "settings-blocks": "github:microsoft/pxt-settings-blocks#v1.0.0",
+        "arcade-browser": "github:pelikhan/arcade-browser#v0.0.4"
     },
     "files": [
         "main.blocks",
