@@ -1,5 +1,5 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.56/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"1.0.7","target":"arcade","targetVersion":"1.12.56","repo":"brohann3214/websockets"}
-// total=2169542 new=4.62% cached=89.94% other=5.44%
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.56/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"1.0.8","target":"arcade","targetVersion":"1.12.56","repo":"brohann3214/websockets"}
+// total=2169701 new=4.63% cached=89.93% other=5.44%
 (function (ectx) {
 'use strict';
 const runtime = ectx.runtime;
@@ -612,7 +612,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P60723(s) {
+function _main___P62402(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1234,10 +1234,10 @@ switch (step) {
     globals.WebSocket_CONNECTING___32897 = (0);
     globals.WebSocket_OPEN___32898 = (1);
     r0 = pxsim_String_.mkEmpty();
-    globals.req___60389 = (r0);
-    globals.myTextSprite___60391 = (null);
+    globals.req___62067 = (r0);
+    globals.myTextSprite___62069 = (null);
     r0 = pxsim_String_.mkEmpty();
-    globals.datareq___60392 = (r0);
+    globals.datareq___62070 = (r0);
     s.tmp_0 = miniMenu_createMenu__P32852_mk(s);
     s.tmp_1 = miniMenu_createMenuItem__P32851_mk(s);
     s.tmp_1.arg0 = "view page";
@@ -1266,9 +1266,9 @@ switch (step) {
     s.callLocIdx = 74; s.pc = 48; return s.tmp_0;
   case 48:
     r0 = s.retval;
-    globals.myMenu___60394 = (r0);
+    globals.myMenu___62072 = (r0);
     r0 = pxsim_String_.mkEmpty();
-    globals.answer___60410 = (r0);
+    globals.answer___62088 = (r0);
     r0 = pxsim_pxtcore_mkClassInstance(WebSocket__C32881_VT);
     s.tmp_0 = r0;
     s.tmp_1 = WebSocket_constructor__P32882_mk(s);
@@ -1277,8 +1277,8 @@ switch (step) {
     s.callLocIdx = 75; s.pc = 51; return s.tmp_1;
   case 51:
     r0 = s.retval;
-    globals.ws___60412 = (s.tmp_0);
-    r0 = pxsim.control.runInParallel(inline__P60416);
+    globals.ws___62090 = (s.tmp_0);
+    r0 = pxsim.control.runInParallel(inline__P62094);
     s.tmp_0 = game_consoleOverlay_setVisible__P31306_mk(s);
     s.tmp_0.arg0 = true;
     s.tmp_0.arg1 = undefined;
@@ -1290,17 +1290,17 @@ switch (step) {
     s.callLocIdx = 84; s.pc = 53; return s.tmp_0;
   case 53:
     r0 = s.retval;
-    globals.gottenanswer___60427 = (false);
+    globals.gottenanswer___62105 = (false);
     s.tmp_0 = miniMenu_MenuSprite_onButtonPressed__P32831_mk(s);
-    s.tmp_0.arg0 = globals.myMenu___60394;
+    s.tmp_0.arg0 = globals.myMenu___62072;
     s.tmp_0.arg1 = globals.A___30293;
-    s.tmp_0.arg2 = inline__P60456;
-    s.callLocIdx = 97; s.pc = 54; return s.tmp_0;
+    s.tmp_0.arg2 = inline__P62134;
+    s.callLocIdx = 98; s.pc = 54; return s.tmp_0;
   case 54:
     r0 = s.retval;
     s.tmp_3 = blockSettings_exists__P32907_mk(s);
     s.tmp_3.arg0 = "savedusername";
-    s.callLocIdx = 98; s.pc = 55; return s.tmp_3;
+    s.callLocIdx = 99; s.pc = 55; return s.tmp_3;
   case 55:
     r0 = s.retval;
     s.tmp_2 = r0;
@@ -1316,13 +1316,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P60723.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/Timers/main.ts","functionName":"<main>","argumentNames":[]}
-_main___P60723.continuations = [  ]
+_main___P62402.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/Timers/main.ts","functionName":"<main>","argumentNames":[]}
+_main___P62402.continuations = [  ]
 
-function _main___P60723_mk(s) {
+function _main___P62402_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P60723, depth: s.depth + 1,
+        parent: s, fn: _main___P62402, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -1865,7 +1865,7 @@ function gameOverConfig_inline__P33500_mk(s) {
 
 
 
-function inline__P60416(s) {
+function inline__P62094(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1881,20 +1881,20 @@ switch (step) {
   case 1:
     r0 = s.retval;
     s.tmp_0 = WebSocket_onerror__P32886_mk(s);
-    s.tmp_0.arg0 = globals.ws___60412;
-    s.tmp_0.arg1 = inline__P60420;
+    s.tmp_0.arg0 = globals.ws___62090;
+    s.tmp_0.arg1 = inline__P62098;
     s.callLocIdx = 78; s.pc = 2; return s.tmp_0;
   case 2:
     r0 = s.retval;
     s.tmp_0 = WebSocket_onmessage__P32888_mk(s);
-    s.tmp_0.arg0 = globals.ws___60412;
-    s.tmp_0.arg1 = inline__P60424;
+    s.tmp_0.arg0 = globals.ws___62090;
+    s.tmp_0.arg1 = inline__P62102;
     s.callLocIdx = 80; s.pc = 3; return s.tmp_0;
   case 3:
     r0 = s.retval;
     s.tmp_0 = WebSocket_onopen__P32890_mk(s);
-    s.tmp_0.arg0 = globals.ws___60412;
-    s.tmp_0.arg1 = inline__P60444;
+    s.tmp_0.arg0 = globals.ws___62090;
+    s.tmp_0.arg1 = inline__P62122;
     s.callLocIdx = 82; s.pc = 4; return s.tmp_0;
   case 4:
     r0 = s.retval;
@@ -1902,12 +1902,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P60416.info = {"start":287,"length":525,"line":9,"column":22,"endLine":26,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P62094.info = {"start":287,"length":525,"line":9,"column":22,"endLine":26,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P60416_mk(s) {
+function inline__P62094_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P60416, depth: s.depth + 1,
+        parent: s, fn: inline__P62094, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
 } }
@@ -1916,7 +1916,7 @@ function inline__P60416_mk(s) {
 
 
 
-function inline__P60420(s) {
+function inline__P62098(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1935,12 +1935,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P60420.info = {"start":455,"length":67,"line":14,"column":17,"endLine":14,"endColumn":84,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P62098.info = {"start":455,"length":67,"line":14,"column":17,"endLine":14,"endColumn":84,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P60420_mk(s) {
+function inline__P62098_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P60420, depth: s.depth + 1,
+        parent: s, fn: inline__P62098, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
 } }
@@ -1949,7 +1949,7 @@ function inline__P60420_mk(s) {
 
 
 
-function inline__P60424(s) {
+function inline__P62102(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1959,21 +1959,21 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.data___60429 = undefined;
+    s.data___62107 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
     }
-    globals.gottenanswer___60427 = (true);
+    globals.gottenanswer___62105 = (true);
     r0 = s.arg0.fields["data"];
-    s.data___60429 = (r0);
+    s.data___62107 = (r0);
     s.tmp_0 = console_log__P28559_mk(s);
-    if ((s.data___60429) && (s.data___60429).vtable) {
+    if ((s.data___62107) && (s.data___62107).vtable) {
     setupResume(s, 2);
-    pxsim_String__stringConv(s.data___60429);
+    pxsim_String__stringConv(s.data___62107);
     checkResumeConsumed();
     return;
-    } else { s.retval = (s.data___60429) + ""; }
+    } else { s.retval = (s.data___62107) + ""; }
   case 2:
     r0 = s.retval;
     s.tmp_1 = r0;
@@ -1984,31 +1984,31 @@ switch (step) {
     r0 = s.retval;
     r0 = pxsim_String_.mkEmpty();
     s.tmp_0 = r0;
-    if ((s.data___60429) && (s.data___60429).vtable) {
+    if ((s.data___62107) && (s.data___62107).vtable) {
     setupResume(s, 3);
-    pxsim_String__stringConv(s.data___60429);
+    pxsim_String__stringConv(s.data___62107);
     checkResumeConsumed();
     return;
-    } else { s.retval = (s.data___60429) + ""; }
+    } else { s.retval = (s.data___62107) + ""; }
   case 3:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_0, s.tmp_1);
-    globals.answer___60410 = (r0);
+    globals.answer___62088 = (r0);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-inline__P60424.info = {"start":542,"length":144,"line":15,"column":19,"endLine":20,"endColumn":5,"fileName":"main.ts","functionName":"inline","argumentNames":["msg"]}
+inline__P62102.info = {"start":542,"length":144,"line":15,"column":19,"endLine":20,"endColumn":5,"fileName":"main.ts","functionName":"inline","argumentNames":["msg"]}
 
-function inline__P60424_mk(s) {
+function inline__P62102_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P60424, depth: s.depth + 1,
+        parent: s, fn: inline__P62102, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
-  data___60429: undefined,
+  data___62107: undefined,
   arg0: undefined,
 } }
 
@@ -2016,7 +2016,7 @@ function inline__P60424_mk(s) {
 
 
 
-function inline__P60444(s) {
+function inline__P62122(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2035,12 +2035,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P60444.info = {"start":703,"length":107,"line":21,"column":16,"endLine":25,"endColumn":5,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P62122.info = {"start":703,"length":107,"line":21,"column":16,"endLine":25,"endColumn":5,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P60444_mk(s) {
+function inline__P62122_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P60444, depth: s.depth + 1,
+        parent: s, fn: inline__P62122, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
 } }
@@ -2049,7 +2049,7 @@ function inline__P60444_mk(s) {
 
 
 
-function inline__P60456(s) {
+function inline__P62134(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2085,48 +2085,53 @@ switch (step) {
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat("/pages/", s.tmp_1);
-    globals.datareq___60392 = (r0);
-    globals.gottenanswer___60427 = (false);
+    globals.datareq___62070 = (r0);
+    globals.gottenanswer___62105 = (false);
     s.tmp_0 = WebSocket_send__P32894_mk(s);
-    s.tmp_0.arg0 = globals.ws___60412;
-    s.tmp_0.arg1 = globals.datareq___60392;
+    s.tmp_0.arg0 = globals.ws___62090;
+    s.tmp_0.arg1 = globals.datareq___62070;
     s.callLocIdx = 86; s.pc = 9; return s.tmp_0;
   case 9:
     r0 = s.retval;
     s.tmp_0 = pauseUntil__P28546_mk(s);
-    s.tmp_0.arg0 = inline__P60474;
+    s.tmp_0.arg0 = inline__P62152;
     s.tmp_0.arg1 = undefined;
     s.callLocIdx = 87; s.pc = 10; return s.tmp_0;
   case 10:
     r0 = s.retval;
     s.tmp_0 = fancyText_create__P32641_mk(s);
-    s.tmp_0.arg0 = globals.answer___60410;
+    s.tmp_0.arg0 = globals.answer___62088;
     s.tmp_0.arg1 = 300;
     s.tmp_0.arg2 = 15;
     s.tmp_0.arg3 = globals.serif_small___32692;
     s.callLocIdx = 88; s.pc = 11; return s.tmp_0;
   case 11:
     r0 = s.retval;
-    globals.myTextSprite___60391 = (r0);
-    r0 = pxsim_String_.includes(globals.answer___60410, "https://", undefined);
+    globals.myTextSprite___62069 = (r0);
+    r0 = pxsim_String_.includes(globals.answer___62088, "https://", undefined);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
     s.tmp_1 = helpers_stringSubstr__P28297_mk(s);
-    s.tmp_1.arg0 = globals.answer___60410;
+    s.tmp_1.arg0 = globals.answer___62088;
     s.tmp_1.arg1 = 1;
-    r0 = pxsim_String_.length(globals.answer___60410);
+    r0 = pxsim_String_.length(globals.answer___62088);
     s.tmp_2 = r0;
     r0 = (s.tmp_2 - 1);
     s.tmp_1.arg2 = r0;
     s.callLocIdx = 89; s.pc = 12; return s.tmp_1;
   case 12:
     r0 = s.retval;
-    globals.answer___60410 = (r0);
+    globals.answer___62088 = (r0);
     s.tmp_0 = web_open__P32517_mk(s);
-    s.tmp_0.arg0 = globals.answer___60410;
+    s.tmp_0.arg0 = globals.answer___62088;
     s.callLocIdx = 90; s.pc = 13; return s.tmp_0;
   case 13:
+    r0 = s.retval;
+    s.tmp_0 = console_log__P28559_mk(s);
+    s.tmp_0.arg0 = "website opening";
+    s.callLocIdx = 91; s.pc = 14; return s.tmp_0;
+  case 14:
     r0 = s.retval;
   case 1:
   case 2:
@@ -2136,140 +2141,140 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 5; continue; }
-    globals.gottenanswer___60427 = (true);
+    globals.gottenanswer___62105 = (true);
     s.tmp_10 = game_askForString__P31217_mk(s);
     s.tmp_10.arg0 = "what is the title?";
     s.tmp_10.arg1 = 12;
-    s.callLocIdx = 91; s.pc = 14; return s.tmp_10;
-  case 14:
+    s.callLocIdx = 92; s.pc = 15; return s.tmp_10;
+  case 15:
     r0 = s.retval;
     s.tmp_9 = r0;
     if ((s.tmp_9) && (s.tmp_9).vtable) {
-    setupResume(s, 15);
+    setupResume(s, 16);
     pxsim_String__stringConv(s.tmp_9);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_9) + ""; }
-  case 15:
+  case 16:
     r0 = s.retval;
     s.tmp_8 = r0;
     r0 = pxsim_String__concat("n/pages/", s.tmp_8);
     s.tmp_7 = r0;
     if ((s.tmp_7) && (s.tmp_7).vtable) {
-    setupResume(s, 16);
+    setupResume(s, 17);
     pxsim_String__stringConv(s.tmp_7);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_7) + ""; }
-  case 16:
+  case 17:
     r0 = s.retval;
     s.tmp_6 = r0;
     r0 = pxsim_String__concat(s.tmp_6, ">");
     s.tmp_5 = r0;
     if ((s.tmp_5) && (s.tmp_5).vtable) {
-    setupResume(s, 17);
+    setupResume(s, 18);
     pxsim_String__stringConv(s.tmp_5);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_5) + ""; }
-  case 17:
+  case 18:
     r0 = s.retval;
     s.tmp_4 = r0;
     s.tmp_13 = game_askForString__P31217_mk(s);
     s.tmp_13.arg0 = "sentence 1";
     s.tmp_13.arg1 = 24;
-    s.callLocIdx = 92; s.pc = 18; return s.tmp_13;
-  case 18:
+    s.callLocIdx = 93; s.pc = 19; return s.tmp_13;
+  case 19:
     r0 = s.retval;
     s.tmp_12 = r0;
     if ((s.tmp_12) && (s.tmp_12).vtable) {
-    setupResume(s, 19);
+    setupResume(s, 20);
     pxsim_String__stringConv(s.tmp_12);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_12) + ""; }
-  case 19:
+  case 20:
     r0 = s.retval;
     s.tmp_11 = r0;
     r0 = pxsim_String__concat(s.tmp_4, s.tmp_11);
     s.tmp_3 = r0;
     if ((s.tmp_3) && (s.tmp_3).vtable) {
-    setupResume(s, 20);
+    setupResume(s, 21);
     pxsim_String__stringConv(s.tmp_3);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_3) + ""; }
-  case 20:
+  case 21:
     r0 = s.retval;
     s.tmp_2 = r0;
     s.tmp_16 = game_askForString__P31217_mk(s);
     s.tmp_16.arg0 = "sentence 2";
     s.tmp_16.arg1 = 24;
-    s.callLocIdx = 93; s.pc = 21; return s.tmp_16;
-  case 21:
+    s.callLocIdx = 94; s.pc = 22; return s.tmp_16;
+  case 22:
     r0 = s.retval;
     s.tmp_15 = r0;
     if ((s.tmp_15) && (s.tmp_15).vtable) {
-    setupResume(s, 22);
+    setupResume(s, 23);
     pxsim_String__stringConv(s.tmp_15);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_15) + ""; }
-  case 22:
+  case 23:
     r0 = s.retval;
     s.tmp_14 = r0;
     r0 = pxsim_String__concat(s.tmp_2, s.tmp_14);
     s.tmp_1 = r0;
     if ((s.tmp_1) && (s.tmp_1).vtable) {
-    setupResume(s, 23);
+    setupResume(s, 24);
     pxsim_String__stringConv(s.tmp_1);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_1) + ""; }
-  case 23:
+  case 24:
     r0 = s.retval;
     s.tmp_0 = r0;
     s.tmp_19 = game_askForString__P31217_mk(s);
     s.tmp_19.arg0 = "sentence 3";
     s.tmp_19.arg1 = 24;
-    s.callLocIdx = 94; s.pc = 24; return s.tmp_19;
-  case 24:
+    s.callLocIdx = 95; s.pc = 25; return s.tmp_19;
+  case 25:
     r0 = s.retval;
     s.tmp_18 = r0;
     if ((s.tmp_18) && (s.tmp_18).vtable) {
-    setupResume(s, 25);
+    setupResume(s, 26);
     pxsim_String__stringConv(s.tmp_18);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_18) + ""; }
-  case 25:
+  case 26:
     r0 = s.retval;
     s.tmp_17 = r0;
     r0 = pxsim_String__concat(s.tmp_0, s.tmp_17);
-    globals.req___60389 = (r0);
+    globals.req___62067 = (r0);
     s.tmp_0 = WebSocket_send__P32894_mk(s);
-    s.tmp_0.arg0 = globals.ws___60412;
-    s.tmp_0.arg1 = globals.req___60389;
-    s.callLocIdx = 95; s.pc = 26; return s.tmp_0;
-  case 26:
+    s.tmp_0.arg0 = globals.ws___62090;
+    s.tmp_0.arg1 = globals.req___62067;
+    s.callLocIdx = 96; s.pc = 27; return s.tmp_0;
+  case 27:
     r0 = s.retval;
   case 5:
   case 6:
     s.tmp_0 = miniMenu_MenuSprite_close__P32830_mk(s);
-    s.tmp_0.arg0 = globals.myMenu___60394;
-    s.callLocIdx = 96; s.pc = 27; return s.tmp_0;
-  case 27:
+    s.tmp_0.arg0 = globals.myMenu___62072;
+    s.callLocIdx = 97; s.pc = 28; return s.tmp_0;
+  case 28:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-inline__P60456.info = {"start":1056,"length":763,"line":36,"column":37,"endLine":55,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["selection","selectedIndex"]}
+inline__P62134.info = {"start":1056,"length":806,"line":36,"column":37,"endLine":56,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["selection","selectedIndex"]}
 
-function inline__P60456_mk(s) {
+function inline__P62134_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P60456, depth: s.depth + 1,
+        parent: s, fn: inline__P62134, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2299,7 +2304,7 @@ function inline__P60456_mk(s) {
 
 
 
-function inline__P60474(s) {
+function inline__P62152(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2309,16 +2314,16 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    r0 = globals.gottenanswer___60427;
+    r0 = globals.gottenanswer___62105;
     return leave(s, r0)
   default: oops()
 } } }
-inline__P60474.info = {"start":1271,"length":18,"line":41,"column":19,"endLine":41,"endColumn":37,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P62152.info = {"start":1271,"length":18,"line":41,"column":19,"endLine":41,"endColumn":37,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P60474_mk(s) {
+function inline__P62152_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P60474, depth: s.depth + 1,
+        parent: s, fn: inline__P62152, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
 } }
 
@@ -72991,7 +72996,7 @@ const sprites_BaseSpriteSayRenderer__C30439_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["myMenu___60394","ws___60412","gottenanswer___60427","answer___60410","datareq___60392","myTextSprite___60391","req___60389"])
+const breakpoints = setupDebugger(1, ["myMenu___62072","ws___62090","gottenanswer___62105","answer___62088","datareq___62070","myTextSprite___62069","req___62067"])
 
-return _main___P60723
+return _main___P62402
 })
