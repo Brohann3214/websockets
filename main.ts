@@ -19,7 +19,7 @@ control.runInParallel(function() {
         answer = `${data}`
     }
     ws.onopen = () => {
-        //const msg = "fiya-based";
+        
         //ws.send(msg);
         console.log(`connected`);
     }
