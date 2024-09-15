@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
     const CHANNEL = "wss"
     const CLOSE_MESSAGE = 1 << 0;
@@ -17,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
             data
         });
     }
-    
+
     function openSocket(id, url) {
         // TODO... close previous sockets
         if (sockets[id]) {
@@ -75,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
             proxy(data)
         }
     }
-        
+
     addSimMessageHandler("wss", (msg) => {
         const type = msg[0]
         const id = msg[1];
@@ -96,8 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
             socket.send(data);
         }
     })
-                  
-})
+
     window.addEventListener('message', function (ev) {
         const d = ev.data
         if (d.type === "simulator" && d.command === "restart") {
