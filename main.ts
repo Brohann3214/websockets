@@ -52,7 +52,8 @@ myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
         gottenanswer = false
         ws.send(datareq)
         pauseUntil(() => gottenanswer)
-        myTextSprite = fancyText.create(answer, 300, 15, fancyText.serif_small)
+        //myTextSprite = fancyText.create(answer, 300, 15, fancyText.serif_small)
+        let textSprite = textsprite.create(answer,0,15)
         if (answer.includes("makecode.com")) {
             answer = answer.substr(1, answer.length-2)
             web.open(answer)

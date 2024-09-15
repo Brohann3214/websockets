@@ -9,7 +9,8 @@
         "arcade-fancy-text": "github:riknoll/arcade-fancy-text#v0.1.1",
         "Timers": "github:microsoft/arcade-timers#v1.1.0",
         "settings-blocks": "github:microsoft/pxt-settings-blocks#v1.0.0",
-        "arcade-browser": "github:pelikhan/arcade-browser#v0.0.4"
+        "arcade-browser": "github:pelikhan/arcade-browser#v0.0.4",
+        "arcade-text": "github:microsoft/arcade-text#v1.3.0"
     },
     "files": [
         "main.blocks",
