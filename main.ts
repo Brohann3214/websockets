@@ -5,6 +5,7 @@ let myMenu = miniMenu.createMenu(
 miniMenu.createMenuItem("view page"),
 miniMenu.createMenuItem("create page")
 )
+let connection = false
 let answer  = ''
 const ws = new WebSocket("wss://eager-terms-jump.loca.lt")
 control.runInParallel(function() {
@@ -22,6 +23,7 @@ control.runInParallel(function() {
         
         //ws.send(msg);
         console.log(`connected`);
+        connection = true
     }
 })
 game.consoleOverlay.setVisible(true)
@@ -59,5 +61,7 @@ if (!(blockSettings.exists("savedusername"))){
     
 }
 game.onUpdateInterval(5000, function() {
+    if (connection){ 
     ws.send("tick")
+    }
 })
