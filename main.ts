@@ -27,7 +27,7 @@ control.runInParallel(function() {
     }
     ws.onclose = () => {
         console.log("disconnected")
-        ws.send("reconnect")
+        WebSocket.CONNECTING
     }
 })
 game.consoleOverlay.setVisible(true)
