@@ -44,6 +44,7 @@ myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
             answer = answer.substr(1, answer.length-1)
             web.open(answer)
             console.log("link opening")
+            console.log(answer)
         }
         
     }
