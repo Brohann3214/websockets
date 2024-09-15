@@ -5,6 +5,7 @@ let myMenu = miniMenu.createMenu(
 miniMenu.createMenuItem("view page"),
 miniMenu.createMenuItem("create page")
 )
+let testmsg = "tick"
 //let connection = false
 let answer  = ''
 const ws = new WebSocket("wss://eager-terms-jump.loca.lt")
@@ -25,7 +26,7 @@ control.runInParallel(function() {
         console.log(`connected`);
         //connection = true
         game.onUpdateInterval(5000, function () {
-            ws.send("tick")
+            ws.send(testmsg)
         })
     }
     ws.onclose = () => {
