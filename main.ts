@@ -26,7 +26,7 @@ control.runInParallel(function() {
         console.log(`connected`);
         //connection = true
 
-        game.onUpdateInterval(5000, function() {
+        game.onUpdateInterval(10000, function() {
             ws.send("tick")
         })
         
