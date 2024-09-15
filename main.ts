@@ -9,6 +9,7 @@ let testmsg = "tick"
 //let connection = false
 let answer  = ''
 const ws = new WebSocket("wss://make-com.loca.lt")
+
 control.runInParallel(function() {
     console.log(`connecting to wss://make-com.loca.lt`)
 
@@ -54,22 +55,21 @@ myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
         pauseUntil(() => gottenanswer)
         myTextSprite = fancyText.create(answer, 300, 15, fancyText.serif_small)
         fancyText.setFrame(myTextSprite, img`
-            b b b b b b b b b b b b b b b b
-            b d d d d d d d d d d d d d d b
-            b d 1 1 1 1 1 1 1 1 1 1 1 1 d b
-            b d 1 1 1 1 1 1 1 1 1 1 1 1 d b
-            b d 1 1 1 1 1 1 1 1 1 1 1 1 d b
-            b d 1 1 1 1 1 1 1 1 1 1 1 1 d b
-            b d 1 1 1 1 1 1 1 1 1 1 1 1 d b
-            b d 1 1 1 1 1 1 1 1 1 1 1 1 d b
-            b d 1 1 1 1 1 1 1 1 1 1 1 1 d b
-            b d 1 1 1 1 1 1 1 1 1 1 1 1 d b
-            b d 1 1 1 1 1 1 1 1 1 1 1 1 d b
-            b d 1 1 1 1 1 1 1 1 1 1 1 1 d b
-            b d 1 1 1 1 1 1 1 1 1 1 1 1 d b
-            b d 1 1 1 1 1 1 1 1 1 1 1 1 d b
-            b d d d d d d d d d d d d d d b
-            b b b b b b b b b b b b b b b b
+            b b b b b b b b b b b b b b .
+            b d d d d d d d d d d d d b c
+            b d 1 1 1 1 1 1 1 1 1 1 d b c
+            b d 1 1 1 1 1 1 1 1 1 1 d b c
+            b d 1 1 1 1 1 1 1 1 1 1 d b c
+            b d 1 1 1 1 1 1 1 1 1 1 d b c
+            b d 1 1 1 1 1 1 1 1 1 1 d b c
+            b d 1 1 1 1 1 1 1 1 1 1 d b c
+            b d 1 1 1 1 1 1 1 1 1 1 d b c
+            b d 1 1 1 1 1 1 1 1 1 1 d b c
+            b d 1 1 1 1 1 1 1 1 1 1 d b c
+            b d 1 1 1 1 1 1 1 1 1 1 d b c
+            b d d d d d d d d d d d d b c
+            b b b b b b b b b b b b b b c
+            . c c c c c c c c c c c c c c
         `)
         //let textSprite = textsprite.create(answer,1,15)
         //textSprite.setPosition(160, 100)
