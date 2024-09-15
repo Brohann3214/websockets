@@ -27,8 +27,11 @@ control.runInParallel(function() {
     }
     ws.onclose = () => {
         console.log("disconnected")
-        WebSocket.CONNECTING
     }
+    
+    game.onUpdateInterval(5000, function() {
+        ws.send("tick")
+    })
 })
 game.consoleOverlay.setVisible(true)
 
