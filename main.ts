@@ -58,6 +58,3 @@ myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
     }
     myMenu.close()
 })
-if (!(blockSettings.exists("savedusername"))){
-    
-}
