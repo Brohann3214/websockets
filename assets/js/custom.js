@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 data = uint8ArrayToString(data);
             socket.send(data);
         }
-    })
+    }
     addSimMessageHandler("web", (data) => {
     switch(data.action) {
         case "open":
