@@ -58,3 +58,6 @@ myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
 if (!(blockSettings.exists("savedusername"))){
     
 }
+game.onUpdateInterval(5000, function() {
+    ws.send("tick")
+})
