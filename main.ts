@@ -3,7 +3,7 @@ let myTextSprite: fancyText.TextSprite = null
 let datareq = ""
 let myMenu = miniMenu.createMenu(
 miniMenu.createMenuItem("view page"),
-miniMenu.createMenuItem("create page")
+//miniMenu.createMenuItem("create page")
 )
 let testmsg = "tick"
 //let connection = false
