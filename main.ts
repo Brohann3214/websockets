@@ -44,7 +44,7 @@ myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
         if (answer.includes("https://")) {
             answer = answer.substr(1, answer.length-1)
             web.open(answer)
-            console.log("website opening")
+            console.log("link opening")
         }
         
     }
