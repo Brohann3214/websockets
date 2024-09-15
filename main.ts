@@ -52,11 +52,29 @@ myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
         gottenanswer = false
         ws.send(datareq)
         pauseUntil(() => gottenanswer)
-        //myTextSprite = fancyText.create(answer, 300, 15, fancyText.serif_small)
-        let textSprite = textsprite.create(answer,1,15)
-        textSprite.setPosition(160, 100)
-        textSprite.setMaxFontHeight(8)
-        textSprite.setOutline(6,1)
+        myTextSprite = fancyText.create(answer, 300, 15, fancyText.serif_small)
+        fancyText.setFrame(myTextSprite, img`
+            b b b b b b b b b b b b b b b b
+            b d d d d d d d d d d d d d d b
+            b d 1 1 1 1 1 1 1 1 1 1 1 1 d b
+            b d 1 1 1 1 1 1 1 1 1 1 1 1 d b
+            b d 1 1 1 1 1 1 1 1 1 1 1 1 d b
+            b d 1 1 1 1 1 1 1 1 1 1 1 1 d b
+            b d 1 1 1 1 1 1 1 1 1 1 1 1 d b
+            b d 1 1 1 1 1 1 1 1 1 1 1 1 d b
+            b d 1 1 1 1 1 1 1 1 1 1 1 1 d b
+            b d 1 1 1 1 1 1 1 1 1 1 1 1 d b
+            b d 1 1 1 1 1 1 1 1 1 1 1 1 d b
+            b d 1 1 1 1 1 1 1 1 1 1 1 1 d b
+            b d 1 1 1 1 1 1 1 1 1 1 1 1 d b
+            b d 1 1 1 1 1 1 1 1 1 1 1 1 d b
+            b d d d d d d d d d d d d d d b
+            b b b b b b b b b b b b b b b b
+        `)
+        //let textSprite = textsprite.create(answer,1,15)
+        //textSprite.setPosition(160, 100)
+        //textSprite.setMaxFontHeight(8)
+        //textSprite.setOutline(6,1)
         if (answer.includes("makecode.com")) {
             answer = answer.substr(1, answer.length-2)
             web.open(answer)
