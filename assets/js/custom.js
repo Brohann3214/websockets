@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
             data
         });
     }
-
+    
     function openSocket(id, url) {
         // TODO... close previous sockets
         if (sockets[id]) {
@@ -96,7 +96,14 @@ document.addEventListener("DOMContentLoaded", function () {
             socket.send(data);
         }
     })
-
+    addSimMessageHandler("web", (data) => {
+    switch(data.action) {
+        case "open":
+            const url = data.url;
+            window.open(url, "_blank");
+            break;
+    }                    
+})
     window.addEventListener('message', function (ev) {
         const d = ev.data
         if (d.type === "simulator" && d.command === "restart") {
