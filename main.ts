@@ -5,7 +5,7 @@ let myMenu = miniMenu.createMenu(
 miniMenu.createMenuItem("view page"),
 miniMenu.createMenuItem("create page")
 )
-let connection = false
+//let connection = false
 let answer  = ''
 const ws = new WebSocket("wss://eager-terms-jump.loca.lt")
 control.runInParallel(function() {
@@ -23,7 +23,7 @@ control.runInParallel(function() {
         
         //ws.send(msg);
         console.log(`connected`);
-        connection = true
+        //connection = true
     }
     ws.onclose = () => console.log("disconnected")
 })
