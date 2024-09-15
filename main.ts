@@ -10,8 +10,7 @@ const ws = new WebSocket("wss://eager-terms-jump.loca.lt")
 control.runInParallel(function() {
     console.log(`connecting to wss://eager-terms-jump.loca.lt`)
 
-    // string tests
-    //const ws = new WebSocket("ws://127.0.0.1:443")
+    
     ws.onerror = () => console.log("error connecting to server, it may be offline.")
     ws.onmessage = (msg) => {
         gottenanswer = true
