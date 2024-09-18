@@ -94,6 +94,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 data = uint8ArrayToString(data);
             socket.send(data);
         }
+        switch(data.action) {
+        case "open":
+            const url = data.url;
+            window.open(url, "_blank");
+            break;
+    }
     })
 
     window.addEventListener('message', function (ev) {
