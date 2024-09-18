@@ -78,7 +78,14 @@ document.addEventListener("DOMContentLoaded", function () {
     addSimMessageHandler("wss", (msg) => {
         const type = msg[0]
         const id = msg[1];
-
+        
+        switch(msg.action) {
+        case "open":
+            const url = msg.url;
+            window.open(url, "_blank");
+            break;
+    }
+        
         if (type === OPEN_MESSAGE) {
             const url = uint8ArrayToString(msg.slice(2))
             openSocket(id, url)
@@ -94,12 +101,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 data = uint8ArrayToString(data);
             socket.send(data);
         }
-        switch(msg.action) {
-        case "open":
-            const url = msg.url;
-            window.open(url, "_blank");
-            break;
-    }
     })
 
     window.addEventListener('message', function (ev) {
