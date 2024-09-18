@@ -8,7 +8,8 @@
         "arcade-fancy-text": "github:riknoll/arcade-fancy-text#v0.1.1",
         "Timers": "github:microsoft/arcade-timers#v1.1.0",
         "settings-blocks": "github:microsoft/pxt-settings-blocks#v1.0.0",
-        "arcade-text": "github:microsoft/arcade-text#v1.3.0"
+        "arcade-text": "github:microsoft/arcade-text#v1.3.0",
+        "websockets-browser": "github:Brohann3214/pxt-websockets-browser-extension#e8a0e16a416167be6f254bf32c309ae8c2461285"
     },
     "files": [
         "main.blocks",
