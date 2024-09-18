@@ -94,9 +94,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 data = uint8ArrayToString(data);
             socket.send(data);
         }
-        switch(data.action) {
+        switch(msg.action) {
         case "open":
-            const url = data.url;
+            const url = msg.url;
             window.open(url, "_blank");
             break;
     }
