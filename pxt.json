@@ -9,7 +9,7 @@
         "Timers": "github:microsoft/arcade-timers#v1.1.0",
         "settings-blocks": "github:microsoft/pxt-settings-blocks#v1.0.0",
         "arcade-text": "github:microsoft/arcade-text#v1.3.0",
-        "websockets-browser": "github:Brohann3214/pxt-websockets-browser-extension#e8a0e16a416167be6f254bf32c309ae8c2461285"
+        "websockets-browser": "github:brohann3214/pxt-websockets-browser-extension#ea611f524cfd66020e7a4ba193c5a2dac5aa9f35"
     },
     "files": [
         "main.blocks",
