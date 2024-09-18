@@ -39,7 +39,7 @@ control.runInParallel(function() {
     
 })
 game.consoleOverlay.setVisible(true)
-//2
+//3
 namespace userconfig {
     export const ARCADE_SCREEN_WIDTH = 320
     export const ARCADE_SCREEN_HEIGHT = 240
