@@ -57,7 +57,7 @@ myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
             console.log(answer)
             answer = answer.substr(4, answer.length - 5)
             console.log("song playing")
-            console.log(answer)
+            //console.log(answer)
             console.log(Buffer.fromUTF8(answer))
             music.play(music.createSong(Buffer.fromHex(answer)), music.PlaybackMode.UntilDone)
         } else {
