@@ -53,6 +53,26 @@ myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
         gottenanswer = false
         ws.send(datareq)
         pauseUntil(() => gottenanswer)
+
+        //let textSprite = textsprite.create(answer,1,15)
+        //textSprite.setPosition(160, 100)
+        //textSprite.setMaxFontHeight(8)
+        //textSprite.setOutline(6,1)
+        if (answer.includes("makecode.com")) {
+            answer = answer.substr(1, answer.length-2)
+            web.open(answer)
+            console.log("link opening")
+            console.log(answer)
+        }
+        if (answer.includes("{s}")) {
+            console.log(answer)
+            answer = answer.substr(4, answer.length - 3) 
+            console.log("song playing")
+            console.log(answer)
+            console.log(Buffer.fromUTF8(answer))
+            music.play(music.createSong(Buffer.fromUTF8(answer)), music.PlaybackMode.UntilDone)
+        }
+        //music.play(music.createSong(hex`0078000408020100001c00010a006400f4016400000400000000000000000000000000050000044e0000000400010504000800010608000c00010a0c001000010d10001400011114001800011418001c0001181c002000011920002400011d24002800012028002c0001242c003000012730003400012a`), music.PlaybackMode.UntilDone)
         myTextSprite = fancyText.create(answer, 300, 15, fancyText.serif_small)
         fancyText.setFrame(myTextSprite, img`
             b b b b b b b b b b b b b b .
@@ -71,24 +91,6 @@ myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
             b b b b b b b b b b b b b b c
             . c c c c c c c c c c c c c c
         `)
-        //let textSprite = textsprite.create(answer,1,15)
-        //textSprite.setPosition(160, 100)
-        //textSprite.setMaxFontHeight(8)
-        //textSprite.setOutline(6,1)
-        if (answer.includes("makecode.com")) {
-            answer = answer.substr(1, answer.length-2)
-            web.open(answer)
-            console.log("link opening")
-            console.log(answer)
-        }
-        if (answer.includes("{s}")) {
-            answer = answer.substr(4, answer.length - 3) 
-            console.log("song playing")
-            console.log(answer)
-            music.play(music.createSong(Buffer.fromUTF8(answer)), music.PlaybackMode.UntilDone)
-        }
-        //music.play(music.createSong(hex`0078000408020100001c00010a006400f4016400000400000000000000000000000000050000044e0000000400010504000800010608000c00010a0c001000010d10001400011114001800011418001c0001181c002000011920002400011d24002800012028002c0001242c003000012730003400012a`), music.PlaybackMode.UntilDone)
-
     }
     if (selectedIndex == 1) {
         gottenanswer = true
