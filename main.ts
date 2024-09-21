@@ -83,7 +83,7 @@ myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
         }
         if (answer.includes("!s!")) {
             console.log(answer)
-            answer = answer.substr(4, answer.length - 6) 
+            answer = answer.substr(4, answer.length - 5) 
             console.log("song playing")
             console.log(answer)
             console.log(Buffer.fromUTF8(answer))
