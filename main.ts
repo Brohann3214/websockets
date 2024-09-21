@@ -82,7 +82,7 @@ myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
             console.log(answer)
         }
         if (answer.includes("{s}")) {
-            answer = answer.substr(4, answer.length - 2) 
+            answer = answer.substr(4, answer.length - 3) 
             console.log("song playing")
             console.log(answer)
             music.play(music.createSong(Buffer.fromUTF8(answer)), music.PlaybackMode.UntilDone)
