@@ -53,8 +53,16 @@ myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
         gottenanswer = false
         ws.send(datareq)
         pauseUntil(() => gottenanswer)
-        myTextSprite = fancyText.create(answer, 300, 15, fancyText.serif_small)
-        fancyText.setFrame(myTextSprite, img`
+        if (answer.includes("!s!")) {
+            console.log(answer)
+            answer = answer.substr(4, answer.length - 5)
+            console.log("song playing")
+            console.log(answer)
+            console.log(Buffer.fromUTF8(answer))
+            music.play(music.createSong(Buffer.fromHex(answer)), music.PlaybackMode.UntilDone)
+        } else {
+            myTextSprite = fancyText.create(answer, 300, 15, fancyText.serif_small)
+            fancyText.setFrame(myTextSprite, img`
             b b b b b b b b b b b b b b .
             b d d d d d d d d d d d d b c
             b d 1 1 1 1 1 1 1 1 1 1 d b c
@@ -71,6 +79,8 @@ myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
             b b b b b b b b b b b b b b c
             . c c c c c c c c c c c c c c
         `)
+        }
+        
         //let textSprite = textsprite.create(answer,1,15)
         //textSprite.setPosition(160, 100)
         //textSprite.setMaxFontHeight(8)
