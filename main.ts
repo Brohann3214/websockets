@@ -81,8 +81,8 @@ myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
             console.log("link opening")
             console.log(answer)
         }
-        if (answer.includes("hex`")) {
-            answer = answer.substr(1, answer.length - 2) 
+        if (answer.includes("{s}")) {
+            answer = answer.substr(4, answer.length - 2) 
             console.log("song playing")
             console.log(answer)
             music.play(music.createSong(Buffer.fromUTF8(answer)), music.PlaybackMode.UntilDone)
