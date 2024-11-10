@@ -8,10 +8,10 @@ miniMenu.createMenuItem("view page"),
 let testmsg = "tick"
 //let connection = false
 let answer  = ''
-const ws = new WebSocket("ws://weboscketserver2.onrender.com:80")
+const ws = new WebSocket("ws://weboscketserver2.onrender.com")
 
 control.runInParallel(function() {
-    console.log(`connecting to ws://weboscketserver2.onrender.com:80`)
+    console.log(`connecting to ws://weboscketserver2.onrender.com`)
 
     
     ws.onerror = () => console.log("error connecting to server, it may be offline.")
