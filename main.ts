@@ -8,10 +8,10 @@ miniMenu.createMenuItem("view page"),
 let testmsg = "tick"
 //let connection = false
 let answer  = ''
-const ws = new WebSocket("wss://make-com.loca.lt")
+const ws = new WebSocket("ws://weboscketserver2.onrender.com:80")
 
 control.runInParallel(function() {
-    console.log(`connecting to wss://make-com.loca.lt`)
+    console.log(`connecting to ws://weboscketserver2.onrender.com:80`)
 
     
     ws.onerror = () => console.log("error connecting to server, it may be offline.")

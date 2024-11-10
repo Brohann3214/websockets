@@ -15,11 +15,13 @@
         "main.blocks",
         "main.ts",
         "README.md",
-        "assets.json"
+        "assets.json",
+        "images.g.jres",
+        "images.g.ts"
     ],
     "testFiles": [],
     "targetVersions": {
-        "target": "1.12.56",
+        "target": "1.12.57",
         "targetId": "arcade"
     },
     "supportedTargets": [
